@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: wheat;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=number] , input[type=file] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=number]:focus , input[type=file]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<form action="#">
+  <div class="container">
+    <h1>Join Us</h1>
+    <hr>
+
+    <label for="Name"><b>First Name<b style="color: red;">*</b></b></label>
+    <input type="text" placeholder="Enter your Name" name="Fnam" id="f_nam" required>
+
+    <label for="Name"><b>Last Name<b style="color: red;">*</b></b></label>
+    <input type="text" placeholder="Enter your Name" name="Lnam" id="l_nam" required>
+
+    <label for="email"><b>Email Id<b style="color: red;">*</b></b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="num"><b>Mobile No.<b style="color: red;">*</b></b></label>
+    <input type="number" placeholder="Enter your phone number" name="num" id="num" required>
+
+    <label for="num_wh"><b>Whatsapp No.<b style="color: red;">*</b></b></label>
+    <input type="number" placeholder="Enter your Whatsapp number" name="num_wh" id="num_wh" required>
+
+    <label for="City"><b>City<b style="color: red;">*</b></b></label>
+    <input type="text" placeholder="Enter your current city" name="city" id="city" required>
+
+    <label for="State"><b>State<b style="color: red;">*</b></b></label>
+    <input type="text" placeholder="Enter your current state" name="state" id="state" required>
+  
+    <label for="Idea"><b>Idea<b style="color: red;">*</b></b></label>  
+    <input type="text" placeholder="Tells Us About Your Idea" name="idea" id="idea" required>
+
+    <label for="Name"><b>Supporting Document(.pdf/.ppt/.doc)</b></label>  
+    <input type="file" placeholder="Choose File" name="file" id="file" >
+    <hr>
+    
+
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+  
+  
+</form>
+
+</body>
+</html>
